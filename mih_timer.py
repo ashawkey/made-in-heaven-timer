@@ -24,7 +24,12 @@ opt = parser.parse_args()
 
 delta = timedelta(seconds=opt.delta)
 start_time = datetime.strptime(opt.start, opt.format)
-end_time = datetime.strptime(opt.end, opt.format) + delta
+end_time = datetime.strptime(opt.end, opt.format)
+countdown = start_time > end_time
+if countdown:
+    end_time -= delta
+else:
+    end_time += delta
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 lineType = cv2.LINE_AA
@@ -44,7 +49,6 @@ location = (opt.pad, text_height + opt.pad)
 
 print(f'[INFO] video size: {H} x {W}')
 
-countdown = start_time > end_time
 
 images = []
 
