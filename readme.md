@@ -2,6 +2,9 @@
 
 A simple script to create a timer video at any acceleration speed:
 
+https://github.com/ashawkey/made-in-heaven-timer/assets/25863658/1477eb63-c639-42ed-a330-87ba7434481c
+
+https://github.com/ashawkey/made-in-heaven-timer/assets/25863658/ac6eb98d-7f8a-4685-9ae3-eddb5497ce75
 
 ### Usage
 ```bash
